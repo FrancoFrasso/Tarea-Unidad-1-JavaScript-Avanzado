@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+    <link rel="stylesheet" href="TAREA EJ 01 - copia.css">
+        
+</head>
+<body>
+
+    
+   
+  
+        <div class="boton1" id="rojo"> </div>
+        <div class="boton2" id="verde"> </div>
+        <div class="boton3" id="amarillo"> </div>
+    
+
+  
+
+    <script>
+        // CSS
+        const boton1 = document.getElementsByClassName('boton1')[0];
+        const rojo = document.getElementById('rojo');
+        
+        
+        rojo.addEventListener('click', function() {
+            boton1.classList.add('rojo');
+        });
+
+        const boton2 = document.getElementsByClassName('boton2')[0];
+        const verde = document.getElementById('verde');
+        
+        
+        verde.addEventListener('click', function() {
+            boton2.classList.add('verde');
+        });
+
+        const boton3 = document.getElementsByClassName('boton3')[0];
+        const amarillo = document.getElementById('amarillo');
+        
+        
+        amarillo.addEventListener('click', function() {
+            boton3.classList.add('amarillo');
+        });
+        
+    </script>
+</body>
+</html>

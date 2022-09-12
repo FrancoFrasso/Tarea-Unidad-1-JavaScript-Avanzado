@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Caracteres</title>
+	<style>
+		*{
+			font-family: 'Courier New', Courier, monospace;
+		}
+		h1 {
+			
+			text-align: center;
+		
+		}
+		textarea{
+			display: block;
+			margin:0 auto;
+			padding:10%;
+			background-color: black;
+			color: white;
+			border: 2px solid red;
+			
+
+		}
+	</style>
+</head>
+<body>
+	<h1>Contador de caracteres</h1>
+	<textarea name="contador" id="contador" onpaste="contador ();" onkeyup="contador ();" class="contador1">  </textarea>
+	<div id="resultado"> </div>
+
+	<script>
+
+		function contador ()
+			{
+		var total = (50);
+		setTimeout (function(){
+				var valor = document.getElementById ('contador');
+				var respuesta = document.getElementById ('resultado');
+				var cantidad = valor.value.length;
+				document.getElementById('resultado').innerHTML = ' Escribiste ' + cantidad + ' ( Max 50 caracteres) ';
+				if (cantidad  >total)
+				{
+					respuesta.style.color = "red";
+					respuesta.style.backgroundColor = "red"
+				}
+				else (cantidad  <total)
+				{
+					respuesta.style.color = "black";
+					
+				}
+			});
+		}
+
+				
+		
+	</script>
+</body>
+</html>

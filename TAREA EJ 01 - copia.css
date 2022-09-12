@@ -1,0 +1,35 @@
+div {
+    display: inline-block;
+}
+
+
+.boton1{
+    
+    background-color: red;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    
+}
+.boton1.rojo{
+    outline: 10000px solid red;
+}
+
+.boton2{
+    background-color: green;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+}
+.boton2.verde{
+    outline: 10000px solid green;
+}
+.boton3{
+    background-color: yellow;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+}
+.boton3.amarillo{
+    outline: 10000px solid yellow;
+}
